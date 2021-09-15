@@ -1,24 +1,59 @@
-# README
+# erabu テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column             | Type       | Options                   |
+| ------------------ | ---------- | ------------------------- |
+| email              | string     | null: false, unique: true |
+| encrypted_password | string     | null: false               |
 
-* Ruby version
+### Association
 
-* System dependencies
+- has_many :groups
 
-* Configuration
+## groups テーブル
 
-* Database creation
+| Column     | Type       | Options           |
+| ---------- | ---------- | ------------------|
+| group_name | string     | null: false       |
+| user       | references | foreign_key: true |
 
-* Database initialization
+### Association
 
-* How to run the test suite
+- belongs_to :user
+- has_many :members
 
-* Services (job queues, cache servers, search engines, etc.)
+## members テーブル
 
-* Deployment instructions
+| Column      | Type       | Options                        |
+| ------------| ---------- | -------------------------------|
+| member_name | string     | null: false                    |
+| group       | references | null: false, foreign_key: true |
 
-* ...
+### Association
+
+- belongs_to :group
+- has_many :winnings, through: :winning_members
+
+## winnings テーブル
+
+| Column         | Type       | Options                        |
+| ---------------| ---------- | ------------------------------ |
+| winning_person | string     | null: false                    |
+| member         | references | null: false, foreign_key: true |
+
+### Association
+
+- has_many :members, through: :winning_members
+
+## winning_members テーブル
+
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| member  | references | null: false, foreign_key: true |
+| winning | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :member
+- belongs_to :winning
