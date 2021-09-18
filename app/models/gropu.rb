@@ -1,0 +1,2 @@
+class Gropu < ApplicationRecord
+end
