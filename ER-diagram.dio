@@ -10,7 +10,7 @@
                 <mxCell id="2" value="Usersテーブル" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=18;strokeWidth=2;" parent="1" vertex="1">
                     <mxGeometry x="272" y="40" width="284" height="116" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" value="nickname（null: false）" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;strokeWidth=2;" vertex="1" parent="2">
+                <mxCell id="28" value="nickname（null: false）" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;strokeWidth=2;" parent="2" vertex="1">
                     <mxGeometry y="26" width="284" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="email（null: false, unique: true）" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;strokeWidth=2;" parent="2" vertex="1">
@@ -20,7 +20,7 @@
                     <mxGeometry y="86" width="284" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="クジ引きアプリ&quot;erabu&quot; ER図" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=18;strokeWidth=2;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="2" y="10" width="241" height="30" as="geometry"/>
+                    <mxGeometry x="2" y="10" width="268" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;startSize=21;endSize=21;strokeWidth=2;" parent="1" source="7" target="10" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
